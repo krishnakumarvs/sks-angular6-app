@@ -6,6 +6,12 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardMainComponent } from './dashboard-main/dashboard-main.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { AngularFireDatabase } from 'angularfire2/database';
+
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,9 +20,10 @@ import { DashboardMainComponent } from './dashboard-main/dashboard-main.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [],
+  providers: [AngularFirestore, AngularFireDatabase],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
