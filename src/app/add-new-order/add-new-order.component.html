@@ -1,0 +1,55 @@
+<div class="add-new-order">
+  <div class="container">
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Customer Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" [(ngModel)]="order.customerName" name="customerName" placeholder="Customer Name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="place">Place</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="place" [(ngModel)]="order.place" name="place" placeholder="Place">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="count">Count</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="count" [(ngModel)]="order.count" name="count" placeholder="count">
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-25">
+          <label for="address">Address</label>
+        </div>
+        <div class="col-75">
+          <textarea id="address" [(ngModel)]="order.address" name="address" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+          <input type="button" class="view-orders-button" (click)="goToDashboard()" value="View Orders">
+        <input type="button" (click)="placeNewOrder()" value="Submit">
+      </div>
+    </form>
+  </div>
+
+</div>

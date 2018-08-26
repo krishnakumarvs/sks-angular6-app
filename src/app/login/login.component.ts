@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DataServiceService } from '../services/data-service/data-service.service';
+import { DataService } from '../services/data-service/data-service.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +10,7 @@ import { DataServiceService } from '../services/data-service/data-service.servic
 export class LoginComponent implements OnInit {
 
   constructor(private router: Router,
-    private dataServiceService: DataServiceService) { }
+    private dataService: DataService) { }
 
   ngOnInit() {
     // this.dataServiceService.fetchSampleData().subscribe(queriedItems => {
