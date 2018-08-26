@@ -7,8 +7,9 @@ export class Order {
     count: number;
     address: string;
     constructor() {
-        this.customerName = "test";
-        this.place = "kaloor";
-        this.address = "some big address";
+        this.customerName = "Rahul Thomas";
+        this.place = "Thrissur";
+        this.address = "Some big address";
+        this.count = 250;
     }
 }

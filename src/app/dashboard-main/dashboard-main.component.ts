@@ -11,8 +11,9 @@ import { OverlayService } from '../services/overlay/overlay.service';
 })
 export class DashboardMainComponent implements OnInit {
 
-  orders: Order[];
-  orderKeys: String[];
+  orders: Order[] = [];
+  orderKeys: String[] = [];
+  loadingComplete: boolean = false;
   constructor(private router: Router,
     private overlayService: OverlayService,
     private dataService: DataService) { }
@@ -27,12 +28,23 @@ export class DashboardMainComponent implements OnInit {
 
   fetchAllOrders() {
     this.overlayService.showOverlay();
+    this.loadingComplete = false;
     this.dataService.fetchAllOrders().subscribe((orders: Order[]) => {
       this.overlayService.hideOverlay();
-      this.orders = orders;
       console.log("Orders ", orders);
-      this.orderKeys = Object.keys(orders);
+      this.loadingComplete = true;
+      if (orders) {
+        this.orders = orders;
+        this.orderKeys = Object.keys(orders);
+      } else {
+        this.clearOrders();
+      }
     });
+  }
+
+  clearOrders() {
+    this.orders = [];
+    this.orderKeys = [];
   }
 
 }

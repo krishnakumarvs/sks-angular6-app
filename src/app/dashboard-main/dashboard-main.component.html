@@ -2,6 +2,9 @@
   <p>
     <button (click)="addNewBooking()" >Add new booking</button>
   </p>
+  <div class="no-orders" *ngIf="loadingComplete && orders.length<=0">
+    No orders
+  </div>
   <div class="previousBookings" *ngFor="let orderKey of orderKeys">
     <div class="customerName">{{orders[orderKey].customerName}}</div>
     <div class="place">{{orders[orderKey].place}}</div>
