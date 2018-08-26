@@ -13,13 +13,15 @@ import { AngularFireDatabase } from 'angularfire2/database';
 
 import { environment } from '../environments/environment';
 import { AddNewOrderComponent } from './add-new-order/add-new-order.component';
+import { OverlayComponentComponent } from './overlay-component/overlay-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardMainComponent,
-    AddNewOrderComponent
+    AddNewOrderComponent,
+    OverlayComponentComponent
   ],
   imports: [
     BrowserModule,
