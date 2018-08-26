@@ -1,0 +1,30 @@
+
+.customerName {
+    width: 25%;
+    display: block;
+    float: left;
+}
+.place {
+    width: 35%;
+    display: block;
+    float: left;
+}
+.count {
+    width: 15%;
+    display: block;
+    float: left;
+}
+.date {
+    width: 20%;
+    display: block;
+    float: left;
+}
+.showMore {
+    width: 5%;
+    display: block;
+    float: left;
+}
+.previousBookings {
+    border: 1px solid black;
+    height: 25px;
+}
