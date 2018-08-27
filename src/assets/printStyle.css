@@ -1,0 +1,146 @@
+/* W3.CSS 4.10 February 2018 by Jan Egil and Borge Refsnes */
+
+.fw {
+    width: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
+
+.bill-wrapper {
+    
+}
+
+.bill-container {
+    /* background-color: lightgrey; */
+    width: 800px;
+    margin: 0 auto;
+}
+
+.phone-number {
+    
+}
+
+.tin-number {
+    
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main-title-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.tax-invoice-title {
+    
+}
+
+.date-of-booking {
+    width: 200px;
+}
+
+.sub-title-bar {
+    margin-top: 10px;
+}
+
+.sub-title-bar .tax-invoice-title {
+    font-weight: bold;
+}
+
+
+.customer-details-box {
+    min-height: 110px;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 20px 10px 5px 5px;
+}
+
+.name-and-address {
+    
+}
+
+.gst-text {
+    width: 60%;
+}
+
+.pan-text {
+    width: 40%;
+}
+
+.mobile-text {
+    width: 40%;
+}
+
+.email-text {
+    width: 60%;
+}
+
+dt { 
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 30px;
+}
+
+dt:after { content: " ........................................................................................................................................................................................................................." }
+
+table {
+    border-collapse: collapse;
+}
+
+.items-table {
+    /* height: 300px; */
+}
+
+.items-table-heading {
+    /* height: 50px; */
+}
+
+tr.items-details {
+    height: 500px;
+}
+
+.table-footer-row {
+    height: 80px;
+    vertical-align: initial;
+}
+
+.auth-sign {
+    margin-top: 40px;
+}
